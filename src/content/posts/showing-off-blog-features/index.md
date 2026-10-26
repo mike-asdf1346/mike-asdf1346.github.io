@@ -75,7 +75,7 @@ echo '666c61677b696b6e65776974776173796f757279616e73756e677d0a' | xxd -r -p
 - `xxd -r`：將十六進制格式轉回二進制格式
 - `xxd -p`：輸出純十六進制格式
 
-### Step 4 — 取得FLAG Retrieve the Flag
+## Step 4 — 取得FLAG Retrieve the Flag
 
 完成上述步驟後，即可得到最終 Flag：
 
@@ -84,6 +84,7 @@ echo '666c61677b696b6e65776974776173796f757279616e73756e677d0a' | xxd -r -p
 ```text
 flag{iknewitwasyouryansung}
 ```
+![IMG of flag](./IMG_9487.png '指令結果')
 
 ## 總結 | Conclusion
 
@@ -96,4 +97,6 @@ flag{iknewitwasyouryansung}
 3. 利用 Linux 指令還原資料。
 
 ## That's all!
+![IMG footer](./pew.gif '')
+
 :closed_lock_with_key: 我也不知道我為什麼要做這個，總之這是我的第一篇Write-Up然後如果有誤請馬上連繫我。最後，謝謝你的閱覽!
