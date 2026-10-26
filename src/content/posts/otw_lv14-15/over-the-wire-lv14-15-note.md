@@ -8,11 +8,11 @@ tags: ['OTW', 'Linux', 'Cybersecurity', 'Journal']
 
 ## Overview
 
-平台: OverTheWire 
-戰爭遊戲: Bandit 
-此篇Lv: Level 14 → Level 15 
-狀態: Complete 
-次篇是否有flag: 無 
+平台: OverTheWire  
+戰爭遊戲: Bandit  
+此篇Lv: Level 14 → Level 15  
+狀態: Complete  
+次篇是否有flag: 無  
 
 ![otw img](/public/otw-image.png '本篇目標')
 
