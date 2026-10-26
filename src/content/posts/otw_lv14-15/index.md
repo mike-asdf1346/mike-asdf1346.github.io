@@ -14,7 +14,7 @@ tags: ['OTW', 'Linux', 'Cybersecurity', 'Journal']
 狀態: Complete  
 此篇是否含有flag: No  
 
-![otw img](/public/otw-image.png '本篇目標')
+![otw img](/otw-image.png '本篇目標')
 
 ## Learning Objectives
 
@@ -54,7 +54,7 @@ Use the file I want in order to enter the target server.
 ssh -i './private_key.txt' bandit14@bandit.labs.overthewire.org -p 2220
 ```  
   
-![otw-login-com](/public/otw-login.png 'Actual command')  
+![otw-login-com](/otw-login.png 'Actual command')  
 
 ## 2 - Challenges I Encountered
 
