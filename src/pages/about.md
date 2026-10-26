@@ -21,3 +21,4 @@ title: 關於我 | About Myself
 ## To be updated...
 I will update more information about myself in the future days. (If I got time to write :P)
 
+![IMG thumbs up](./nice_hehe.png)
