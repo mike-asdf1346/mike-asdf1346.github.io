@@ -10,7 +10,7 @@ coverImage:
 ---
 
 我在IG帳號中藏入了一個加密字串，你的目標是找出帳號裡洩漏出的**data**，並觀察字串中的規律，加以破解取得**Flag**。
-<br>🏁Flag格式：flag{example}
+> 🏁Flag格式：flag{example}
 ## Theming
 
 > Use your favorite editor theme for your blog!
