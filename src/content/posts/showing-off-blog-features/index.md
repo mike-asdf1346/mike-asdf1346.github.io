@@ -1,16 +1,16 @@
 ---
-title: 'Showing Off Blog Features'
-published: 2025-07-20
+title: 'IG-spot-the-weak CTF Write-Up'
+published: 2026-10-26
 draft: false
-tags: ['astro', 'demo', 'markdown']
+tags: ['CTF', 'Crypto', 'Cybersecurity']
 toc: true
 coverImage:
   src: './cover.jpg'
-  alt: 'A person with short, thick hair and prescription glasses sits at an organized workstation, using a magnification app to navigate a webpage. Their posture is proper and relaxed. On the desk: a computer, a mouse, a large desk lamp and a small notebook.'
+  alt: 'Sorry, the image is not shown.'
 ---
 
-Since the post does not have a description in the frontmatter, the first paragraph is used.
-
+我在IG帳號中藏入了一個加密字串，你的目標是找出帳號裡洩漏出的**data**，並觀察字串中的規律，加以破解取得**Flag**。
+<br>🏁Flag格式：flag{example}
 ## Theming
 
 > Use your favorite editor theme for your blog!
