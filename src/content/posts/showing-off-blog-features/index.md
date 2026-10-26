@@ -1,5 +1,5 @@
 ---
-title: 'IG-spot-the-weak CTF Write-Up'
+title: 'IG-spot-the-data CTF Write-Up'
 published: 2026-10-26
 draft: false
 tags: ['CTF', 'Crypto', 'Cybersecurity']
@@ -9,7 +9,7 @@ coverImage:
   alt: 'Sorry, the image is not shown.'
 ---
 
-我在IG帳號中藏入了一個加密字串，你的目標是找出帳號裡洩漏出的**data**，並觀察字串中的規律，加以破解取得**Flag**。
+我在IG帳號中藏入了一個加密字串，目標是找出帳號裡洩漏出的**data**，並觀察字串中的規律，加以破解取得**Flag**。
 > 🏁Flag格式：flag{example}
 ## 開場 | Intro
 
@@ -43,10 +43,10 @@ coverImage:
 
 ## STEP 2 — 置換文字 | Shift the Characters
 
-觀察字串中的英文字母與數字，將兩者分別向前位移 7 個位置。
+觀察字串中的英文字母與數字，將兩者分別向前移 7 個位置。
 > e.g. 'a' ---> 'h' 'b' ---> 'i'
 
-解密後得到：
+移完後得到：
 
 ```text
 666c61677b696b6e65776974776173796f757279616e73756e677d0a
@@ -57,7 +57,7 @@ coverImage:
 ---
 
 
-## STEP 3 — 觀察並利用xxd指令 Inspect and xxd Decode
+## STEP 3 — 觀察並利用xxd指令 Inspect and use xxd command
 
 觀察剛剛的字串可以發現是由十六進制格式組成的。 
 > '66'--->'f' '6c'--->'l'
@@ -77,7 +77,7 @@ echo '666c61677b696b6e65776974776173796f757279616e73756e677d0a' | xxd -r -p
 - `xxd -r`：將十六進制格式轉回二進制格式
 - `xxd -p`：輸出純十六進制格式
 
-## Step 4 — 取得FLAG Retrieve the Flag
+## Step 4 — 取得FLAG | Retrieve the Flag
 
 完成上述步驟後，即可得到最終 Flag：
 
