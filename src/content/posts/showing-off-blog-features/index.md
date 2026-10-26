@@ -33,7 +33,10 @@ coverImage:
 ```text
 333j38344i363i3l32443641443840463m424946383l40423l344k7h
 ```
-![IMG 1](./IMG_5257.jpg)
+![IMG 1](./IMG_5257.jpg '找出帳號')
+
+![IMG 2](./IMG_5258.jpg '總共有三篇奇怪的貼文')
+
 ---
 
 ## STEP 2 — 置換文字 | Shift the Characters
