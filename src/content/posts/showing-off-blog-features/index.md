@@ -13,84 +13,45 @@ coverImage:
 > 🏁Flag格式：flag{example}
 ## Theming
 
-> Use your favorite editor theme for your blog!
+> ⚠️WARNING: THIS WRITE-UP CONTAINS FLAG!!⚠️
 
-Theming for the website comes from builtin Shiki themes found in Expressive Code. You can view them [here](https://expressive-code.com/guides/themes/#available-themes). A website can have one or more themes, defined in `src/site.config.ts`. There are three theming modes to choose from:
+以下為本題的完整解題流程。
 
-1. `single`: Choose a single theme for the website. Simple.
-2. `light-dark-auto`: Choose two themes for the website to use for light and dark mode. The header will include a button for toggling between light/dark/auto. For example, you could choose `github-dark` and `github-light` with a default of `"auto"` and the user's experience will match their operating system theme straight away.
-3. `select`: Choose two or more themes for the website and include a button in the header to change between any of these themes. You could include as many Shiki themes from Expressive Code as you like. Allow users to find their favorite theme!
-
-> When the user changes the theme, their preference is stored in `localStorage` to persist across page navigation.
-
-## Code Blocks
-
-Let's look at some code block styles:
-
-```python
-def hello_world():
-    print("Hello, world!")
-
-hello_world()
+1. 本題的答案藏在一個IG帳號中的三個貼文內。
+2. 其中, 有一個貼文洩漏出了這一段文字：
+```text
+[  0.034100] data: 333j38344i363i3l32443641443840463m424946383l40423l344k7h
 ```
-
-```python title="hello.py"
-def hello_world():
-    print("Hello, world!")
-
-hello_world()
-```
-
-```shell
-python hello.py
-```
-
-Also some inline code: `1 + 2 = 3`. Or maybe even `(= (+ 1 2) 3)`.
-
-See the [Expressive Code Docs](https://expressive-code.com/key-features/syntax-highlighting/) for more information on available features like wrapping text, line highlighting, diffs, etc.
-
-## Basic Markdown Elements
-
-- List item 1
-- List item 2
-
-**Bold text**
-
-_Italic text_
-
-~~Strikethrough text~~
-
-[Link](https://www.example.com)
-
-> In life, as in art, some endings are bittersweet. Especially when it comes to love. Sometimes fate throws two lovers together only to rip them apart. Sometimes the hero finally makes the right choice but the timing is all wrong. And, as they say, timing is everything.
->
-> \- Gossip Girl
-
-| Name    | Age | City        |
-| ------- | --- | ----------- |
-| Alice   | 30  | New York    |
-| Bob     | 25  | Los Angeles |
-| Charlie | 35  | Chicago     |
+3. 找到之後就可以開始解題了。
 
 ---
 
-## Images
+## STEP 1 — 辨認加密字串 | Identify the Encrypted Code
 
-Images can include a title string after the URL to render as a `<figure>` with a `<figcaption>`.
+首先，找出原帳號簡介中所提供的秘密帳號並找出裡面提供的加密字串：
 
-![Pixel art of a tree](./PixelatedGreenTreeSide.png 'Pixel art renders poorly without proper CSS')
-
-```md title="Pixel art markdown" wrap
-![Pixel art of a tree](./PixelatedGreenTreeSide.png 'Pixel art renders poorly without proper CSS')
+```text
+333j38344i363i3l32443641443840463m424946383l40423l344k7h
 ```
 
-I've also added a special tag for pixel art that adds the correct CSS to render properly. Just add `#pixelated` to the very end of the alt string.
+---
 
-![Pixel art of a tree #pixelated](./PixelatedGreenTreeSide.png 'But adding #pixelated to the end of the alt string fixes this')
+## STEP 2 — 置換文字 | Shift the Characters
 
-```md title="Pixel art markdown with #pixelated" wrap
-![Pixel art of a tree #pixelated](./PixelatedGreenTreeSide.png 'But adding #pixelated to the end of the alt string fixes this')
+觀察字串中的英文字母與數字，將兩者分別向前位移 7 個位置。
+e.g. 'a' ---> 'h' 'b' ---> 'i'
+
+解密後得到：
+
+```text
+666c61677b696b6e65776974776173796f757279616e73756e677d0a
 ```
+<!--圖片格式
+![Pixel art of a tree](./PixelatedGreenTreeSide.png 'Pixel art renders poorly without proper CSS')
+-->
+---
+
+
 
 ## Admonitions
 
