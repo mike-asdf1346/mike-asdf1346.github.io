@@ -169,7 +169,7 @@ const config: SiteConfig = {
   giscus: {
     repo: 'stelcodes/multiterm-astro',
     repoId: 'R_kgDOPNnBig',
-    category: 'Giscus',
+    category: 'undefined',
     categoryId: 'DIC_kwDOPNnBis4CteOc',
     reactionsEnabled: true, // Enable reactions on post itself
   },
