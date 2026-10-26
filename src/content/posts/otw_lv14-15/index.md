@@ -2,7 +2,7 @@
 title: 'Over-The-Wire lv13-14 Learning Journal'
 published: 2026-10-26
 draft: false
-description: '這是一篇~~非常無聊的~~學習筆記，第一次用我說明一下。我會用來紀錄我在OverTheWire遇到比較印象深刻的題目或是困難，還有我是如何理解其中的出題思路。在這篇中我會整理我遇到一個新觀念時是如何解決的。'
+description: '這是一篇無聊的學習筆記(x。第一次用我說明一下。我會用來紀錄我在OverTheWire遇到比較印象深刻的題目或是困難，還有我是如何理解其中的出題思路。在這篇中我會整理我遇到一個新觀念時是如何解決的。'
 tags: ['OTW', 'Linux', 'Cybersecurity', 'Journal']
 ---
 
@@ -14,7 +14,7 @@ tags: ['OTW', 'Linux', 'Cybersecurity', 'Journal']
 狀態: Complete  
 此篇是否含有flag: No  
 
-![otw img](/otw-image.png '本篇目標')
+![otw img](/otw-image.png 'goal')
 
 ## Learning Objectives
 
