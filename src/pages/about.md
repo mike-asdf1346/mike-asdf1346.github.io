@@ -14,3 +14,10 @@ title: 關於我 | About Myself
 - Nico Patty OSTs
 - 看動漫
 - 畫畫 (很想畫但最近很忙QQ)
+
+## 正在學習的事 | What I'm Doing
+目前正在學習網站架構、Linux、Networking、C language、CTF and so much about cybersecurity.
+
+## To be updated...
+I will update more information about myself in the future days. (If I got time to write :P)
+
