@@ -11,7 +11,7 @@ coverImage:
 
 我在IG帳號中藏入了一個加密字串，你的目標是找出帳號裡洩漏出的**data**，並觀察字串中的規律，加以破解取得**Flag**。
 > 🏁Flag格式：flag{example}
-## Theming
+## 開場 | Intro
 
 > ⚠️WARNING: THIS WRITE-UP CONTAINS FLAG!!⚠️
 
@@ -33,7 +33,7 @@ coverImage:
 ```text
 333j38344i363i3l32443641443840463m424946383l40423l344k7h
 ```
-
+![IMG 1](./IMG_5257.jpg)
 ---
 
 ## STEP 2 — 置換文字 | Shift the Characters
