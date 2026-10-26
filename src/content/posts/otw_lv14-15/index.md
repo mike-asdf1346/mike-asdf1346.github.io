@@ -63,4 +63,4 @@ I'm confused when I first seeing 'no password needed to enter the next level' bu
 ## Quick Reflection
 
 For now I can properly use the ssh command and utilize it to complete the incoming levels.  
-this level has cleared since 1 monthe ago by myself.
+this level has cleared since 1 month ago by myself.
