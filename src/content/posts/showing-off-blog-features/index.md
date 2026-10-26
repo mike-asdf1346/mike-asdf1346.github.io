@@ -42,7 +42,7 @@ coverImage:
 ## STEP 2 — 置換文字 | Shift the Characters
 
 觀察字串中的英文字母與數字，將兩者分別向前位移 7 個位置。
-e.g. 'a' ---> 'h' 'b' ---> 'i'
+> e.g. 'a' ---> 'h' 'b' ---> 'i'
 
 解密後得到：
 
@@ -55,189 +55,45 @@ e.g. 'a' ---> 'h' 'b' ---> 'i'
 ---
 
 
+## STEP 3 — 觀察並利用xxd指令 Inspect and xxd Decode
 
-## Admonitions
+觀察剛剛的字串可以發現是由十六進制格式組成的。 
+> '66'--->'f' '6c'--->'l'
 
-```md title="Admonition example in markdown"
-:::note
-testing123
-:::
+接下來，可使用 Linux 指令處理解密後的內容。
+把結果echo出來並利用導管連接xxd指令：
+
+```bash
+echo '666c61677b696b6e65776974776173796f757279616e73756e677d0a' | xxd -r -p
 ```
 
-:::note
-testing123
-:::
+利用網路上的工具轉換也行。
 
-:::tip
-testing123
-:::
+**指令break down**
 
-:::important
-testing123
-:::
+- `cat`：讀取檔案內容
+- `xxd -r`：將十六進制格式轉回二進制格式
+- `xxd -p`：輸出純十六進制格式
 
-:::caution
-testing123
-:::
+### Step 4 — 取得FLAG Retrieve the Flag
 
-:::warning
-testing123
-:::
+完成上述步驟後，即可得到最終 Flag：
 
-## Character Chats
+:checkered_flag: **Flag**
 
-```md title="Custom character chat" wrap
-:::duck
-**Did you know?** You can easily create custom character chats for your blog with MultiTerm!
-:::
+```text
+flag{iknewitwasyouryansung}
 ```
 
-:::duck
-**Did you know?** You can easily create custom character chats for your blog with MultiTerm!
-:::
+## 總結 | Conclusion
 
-### Adding Your Own
+本題結合了資料比對、字元位移與簡易十六進位解碼。
 
-To add your own character, first add an image file to the top-level `/public` directory in your cloned MultiTerm repo. Astro cannot automatically optimize image assets from markdown plugins, so make sure to compress the image to a web-friendly size (<100kb).
+解題的關鍵在於：
+1. 找出貼文內洩漏機密(data:)的字串。
+1. 找出正確的字元位移規則。
+2. 將解密後的字串視為十六進位資料。
+3. 利用 Linux 指令還原資料。
 
-I recommend Google's free [Squoosh](https://squoosh.app) web app for creating super small webp files. The characters here have been resized to 300 pixels wide and exported to webp with 75% quality using Squoosh.
-
-After you've added your image, update the `characters` option in `site.config.ts` with your newly added image file and restart the development server.
-
-### Character Conversations
-
-When there are multiple character chats in a row, the order of the chat image and chat bubble reverses to give the chat more of a back-and-forth appearance.
-
-```md title="Sequential character chats"
-:::owl
-This is a cool feature!
-:::
-
-:::unicorn
-I agree!
-:::
-```
-
-:::owl
-This is a cool feature!
-:::
-
-:::unicorn
-I agree!
-:::
-
-You can specify the alignment (`left` or `right`) to override the default `left, right, left, ...` ordering.
-
-```md wrap title="Character chats with specific alignment"
-:::unicorn{align="right"}
-Over here, to the right!
-:::
-```
-
-:::unicorn{align="right"}
-Over here, to the right!
-:::
-
-## GitHub Cards
-
-GitHub overview cards heavily inspired by [Astro Cactus](https://github.com/chrismwilliams/astro-theme-cactus).
-
-```md title="GitHub repo card example in markdown"
-::github{repo="stelcodes/multiterm-astro"}
-```
-
-::github{repo="stelcodes/multiterm-astro"}
-
-```md wrap=true title="GitHub user card example in markdown"
-::github{user="withastro"}
-```
-
-::github{user="withastro"}
-
-## Emoji :star_struck:
-
-Emojis can be added in markdown by including a literal emoji character or a GitHub shortcode. You can browse an unofficial database [here](https://emojibase.dev/emojis?shortcodePresets=github).
-
-```md title="Example markdown with GitHub emoji shortcodes"
-Good morning! :sleeping: :coffee: :pancakes:
-```
-
-Good morning! :sleeping: :coffee: :pancakes:
-
-> All emojis \(both literal and shortcoded\) are made more accessible by wrapping them in a `span` tag like this:
->
-> ```html
-> <span role="img" aria-label="coffee">☕️</span>
-> ```
->
-> At the time of writing, [emoji v16](https://emojipedia.org/emoji-16.0) is not supported yet. These emojis can be included literally but they do not have shortcodes and will not be wrapped.
-
-## LaTeX/KaTeX Math Support
-
-You can also display inline math via [remark-math and rehype-katex](https://github.com/remarkjs/remark-math).
-
-```txt title="Rendering inline math with KaTeX"
-Make those equations pretty! $ \frac{a}{b} \cdot b = a $
-```
-
-Make those equations pretty! $ \frac{a}{b} \cdot b = a $
-
-Check out the [KaTeX docs](https://katex.org/docs/supported) to learn about the syntax.
-
-```md title="Rendering a block of KaTeX" wrap
-$$
-a + ar + ar^2 + ar^3 + \dots + ar^{n-1} = \displaystyle\sum_{k=0}^{n - 1}ar^k = a \bigg(\dfrac{1 - r^n}{1 -r}\bigg)
-$$
-```
-
-$$
-a + ar + ar^2 + ar^3 + \dots + ar^{n-1} = \displaystyle\sum_{k=0}^{n - 1}ar^k = a \bigg(\dfrac{1 - r^n}{1 -r}\bigg)
-$$
-
-## HTML Elements
-
-<button>A Button</button>
-
-### Fieldset with Inputs
-
-<fieldset>
-    <input type="text" placeholder="Type something"><br>
-    <input type="number" placeholder="Insert number"><br>
-    <input type="text" value="Input value"><br>
-    <select>
-        <option value="1">Option 1</option>
-        <option value="2">Option 2</option>
-        <option value="3">Option 3</option>
-    </select><br>
-    <textarea placeholder="Insert a comment..."></textarea><br>
-    <label><input type="checkbox"> I understand<br></label>
-    <button type="submi">Submit</button>
-</fieldset>
-
-### Form with Labels
-
-<form>
-<label>
-    <input type="radio" name="fruit" value="apple">
-    Apple
-</label><br>
-
-<label>
-    <input type="radio" name="fruit" value="banana">
-    Banana
-</label><br>
-
-<label>
-    <input type="radio" name="fruit" value="orange">
-    Orange
-</label><br>
-
-<label>
-    <input type="radio" name="fruit" value="grape">
-    Grape
-</label><br>
-
-<label>
-    <input type="checkbox" name="terms" value="agree">
-    I agree to the terms and conditions
-</label><br>
+## That's all!
+:closed_lock_with_key: 我也不知道我為什麼要做這個，總之這是我的第一篇Write-Up然後如果有誤請馬上連繫我。最後，謝謝你的閱覽!
