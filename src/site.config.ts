@@ -153,7 +153,7 @@ const config: SiteConfig = {
   socialLinks: {
     github: 'https://github.com/mike-asdf1346',
     linkedin: 'https://www.linkedin.com/in/mike-undefined-285b39446/',
-    twitter: 'https://github.com/stelcodes/multiterm-astro',
+    twitter: 'https://x.com/Mikesoso156890',
   },
   // bluesky: 'https://github.com/stelcodes/multiterm-astro',
   // rss: true, // Set to true to include an RSS feed link in the footer
