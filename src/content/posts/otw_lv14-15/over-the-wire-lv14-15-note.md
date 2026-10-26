@@ -53,7 +53,9 @@ Use the file I want in order to enter the target server.
 ```bash
 ssh -i './private_key.txt' bandit14@bandit.labs.overthewire.org -p 2220
 ```  
- 
+  
+![otw-login-com](/public/otw-login.png 'Actual command')  
+
 ## 2 - Challenges I Encountered
 
 I'm confused when I first seeing 'no password needed to enter the next level' but soon I understand this after a quick research and know more about the 'ssh' command.  
