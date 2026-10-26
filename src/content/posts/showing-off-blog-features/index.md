@@ -37,6 +37,8 @@ coverImage:
 
 ![IMG 2](./IMG_5258.png '總共有三篇奇怪的貼文')
 
+![IMG 3](./IMG_5259.jpg '仔細找會發現其中一個貼文出現了"data"字樣')
+
 ---
 
 ## STEP 2 — 置換文字 | Shift the Characters
