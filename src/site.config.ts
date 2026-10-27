@@ -7,7 +7,7 @@ const config: SiteConfig = {
   title: 'Mike\'s Blog',
   // The description of your site, used for SEO and RSS feed.
   description:
-    'Mike (Jelly)\'s personal blog about cybersecurity, programming, CTF challenges, and technical explorations.',
+    'My personal blog about cybersecurity, CTF challenges, and some learning journals.',
   // The author of the site, used in the footer, SEO, and RSS feed.
   author: 'Mike Tsai',
   // Keywords for SEO, used in the meta tags.
@@ -49,7 +49,7 @@ const config: SiteConfig = {
   // The theming configuration for the site.
   themes: {
     // The theming mode. One of "single" | "select" | "light-dark-auto".
-    mode: 'single',
+    mode: 'select',
     // The default theme identifier, used when themeMode is "select" or "light-dark-auto".
     // Make sure this is one of the themes listed in `themes` or "auto" for "light-dark-auto" mode.
     default: 'monokai',
