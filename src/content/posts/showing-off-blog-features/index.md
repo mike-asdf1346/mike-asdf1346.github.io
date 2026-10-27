@@ -2,7 +2,7 @@
 title: 'IG-spot-the-data CTF Write-Up'
 published: 2026-10-26
 draft: false
-tags: ['CTF', 'Crypto', 'Cybersecurity']
+tags: ['CTF', 'Misc', 'Cybersecurity']
 toc: true
 coverImage:
   src: './cover.jpg'
