@@ -19,6 +19,6 @@ title: 關於我 | About Myself
 目前正在學習網站架構、Linux、Networking、C language、CTF and so much more about cybersecurity.
 
 ## To be updated...
-I will update more information about myself in the future days. (If I got time to write :P)
-> ここから、始めましょう。一から…いいえ、ゼロから！
+I will update more information about myself in the future days. (If I got time to write :P)  
+
 ![IMG thumbs up](./nice_hehe.png)
