@@ -7,7 +7,8 @@ tags: ['OTW', 'Linux', 'Cybersecurity', 'Journal']
 ---
 
 ## Overview
-> Updated 2026/10/27 -- refined general formatting and grammer inconsistency.
+> Updated 2026/10/27 -- refined general formatting and grammer inconsistency.  
+  
 平台: OverTheWire  
 戰爭遊戲: Bandit  
 此篇Lv: Level 13 → Level 14  
