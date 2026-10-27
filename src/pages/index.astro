@@ -40,7 +40,7 @@ const postsHaveSeries = sortedPosts.some((post) => post.data.series)
   {
     postsHaveSeries && (
       <section>
-        <BlockHeader>系列</BlockHeader>
+        <BlockHeader>Series</BlockHeader>
         <SeriesSection posts={sortedPosts} />
       </section>
     )
@@ -56,7 +56,7 @@ const postsHaveSeries = sortedPosts.some((post) => post.data.series)
   {
     sortedPosts.length > 0 && (
       <section>
-        <BlockHeader>最新貼文</BlockHeader>
+        <BlockHeader>Posts</BlockHeader>
         {sortedPosts
           .reverse()
           .slice(0, Math.floor(siteConfig.pageSize / 2))
