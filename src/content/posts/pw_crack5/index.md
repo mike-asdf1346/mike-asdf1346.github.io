@@ -27,7 +27,7 @@ with all possible passwords based on the password conventions we've seen so far.
 first thing to do is:   
 `wget <url>`    
 
-## Content of dictionary.txt:   
+## Content of `dictionary.txt`:   
 ```text
 0000
 0001
