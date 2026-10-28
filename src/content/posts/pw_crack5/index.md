@@ -1,7 +1,7 @@
 ---
 title: 'picoCTF Password_cracking5 Learning Journal'
 published: 2026-10-28
-draft: true
+draft: false
 tags: ['CTF', 'Python', 'Journal']
 toc: true
 coverImage:
