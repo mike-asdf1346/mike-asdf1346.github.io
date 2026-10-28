@@ -9,14 +9,14 @@ coverImage:
   alt: 'Sorry, the image is not shown.'
 ---   
 
-### Overview   
+## Overview   
 Platform: picoCTF    
 Level: password_cracking5   
 :::warning
 This article contains flag!
 :::  
 
-### Goal:   
+## Goal:   
 ```text
 Can you crack the password to get the flag? Download the password checker here
 and you'll need the encrypted <flag>
@@ -27,7 +27,7 @@ with all possible passwords based on the password conventions we've seen so far.
 first thing to do is:   
 `wget <url>`    
 
-### This is the content of dictionary.txt:   
+## Content of dictionary.txt:   
 ```text
 0000
 0001
@@ -60,9 +60,10 @@ Then use for loop to iterate through the whole dictionary:
             print(password)
             user_pw_hash = hash_pw(password)
 ```   
->! The output of the password would be '0001\n', thus, remove the '\n' by utilizing `strip()`, which removes both '\n, spaces' for a clean password.   
-   
-# Last step:   
+:::note
+ The output of the password would be '0001\n', thus, remove the '\n' by utilizing `strip()`, which removes both '\n, spaces' for a clean password.   
+:::
+## Last step:   
 so now just copy and paste the rest of the code base and fix some indentation error
 ```python
 def level_5_pw_check():
