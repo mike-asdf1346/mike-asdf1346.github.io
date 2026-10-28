@@ -48,6 +48,7 @@ first thing to do is:
 0010
 ...and so on...
 ```
+## Solve
 I tried to use the given password dictionary and set file mode to readable:   
 ```python
 with open("./dictionary.txt", "r") as f1:
@@ -128,6 +129,13 @@ def level_5_pw_check():
 level_5_pw_check()
 ```   
 
-output:      
+## Output:      
 ![result pw5](./picoCTFlv5.png 'Retrieved the flag')  
+
+flag:   
+```text
+academy{h45h_sl1ng1ng_e062d0ff}
+```   
+## The End
+thanks for reading this article!
 
