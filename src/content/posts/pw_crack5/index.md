@@ -10,9 +10,11 @@ coverImage:
 ---   
 
 ### Overview   
-Platform: picoCTF
-Level: password_cracking5
-Contains flag: **Yes**  
+Platform: picoCTF    
+Level: password_cracking5   
+:::warning
+This article contains flag!
+:::  
 
 ### Goal:   
 ```text
