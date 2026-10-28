@@ -1,20 +1,21 @@
 ---
-title: 'picoCTF Password_cracking5 Learning Journal'
+title: 'picoCTF PW5 Learning Journal'
 published: 2026-10-28
 draft: false
 tags: ['CTF', 'Python', 'Journal']
 toc: true
 coverImage:
-  src: './pico-cover.jpg'
+  src: './pico-flag.png'
   alt: 'Sorry, the image is not shown.'
+description: '紀錄picoCTF PW5的解題過程，理解並透過python內函式庫`open()`修改內容取得flag'
 ---   
 
 ## Overview   
 Platform: picoCTF    
-Level: password_cracking5   
+Level: PW 5   
 :::warning
-This article contains flag!
-:::  
+**This article contains flag!**
+::: 
 
 ## Goal:   
 ```text
