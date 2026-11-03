@@ -1,8 +1,10 @@
 ---
-title: ''
-published: 2026-00-00
+title: 'Arch linux 安裝心得（不含KDE安裝）'
+published: 2026-11-10
 draft: true
-description: ''
-tags: ['']
+tags: ['Arch', 'Linux', 'Review', 'Journal']
+toc: true
+coverImage:
+  src: './暫定'
+  alt: 'Sorry, some error occured.'
 ---
-test
