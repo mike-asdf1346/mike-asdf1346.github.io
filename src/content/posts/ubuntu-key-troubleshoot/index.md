@@ -15,7 +15,7 @@ coverImage:
 :::
 修復下載 VirtualBox 時出現 NO_PUBKEY 的錯誤   
 我的版本：   
-![version-ubuntu](/public/version.png)
+![version-ubuntu](./version.png)
 ## 問題描述 | Problem
 我在終端機使用`sudo apt update`時出現以下錯誤：   
 ```bash
@@ -34,7 +34,7 @@ Error: The repository is not signed.
 ## 流程
 ### VirtualBox Repo 的設定
 先找到 Virtualbox repo 的設定：
-![settings](/public/virtualbox-set.png)   
+![settings](./virtualbox-set.png)   
 我的是：
 ```bash
 deb [arch=amd64 signed-by=/usr/share/keyrings/virtualbox.gpg] https://download.virtualbox.org/virtualbox/debian resolute contrib
@@ -59,7 +59,7 @@ gpg --show-keys --with-fingerprint /tmp/oracle_vbox_2016.asc
 ```  
 ### 驗證指紋 
 確認 Fingerprint 金鑰指紋是否跟官方的吻合：   
-![fingerprint](/public/fingerprint.png)
+![fingerprint](./fingerprint.png)
 ```text
 B9F8 D658 297A F3EF C18D 5CDF A2F6 83C5 2980 AECF
 ```   
@@ -77,9 +77,9 @@ sudo gpg --dearmor --yes -o /usr/share/keyrings/virtualbox.gpg /tmp/oracle_vbox_
 ls /usr/share/keyrings | grep 'virtualbox'
 ```   
 Output:   
-![outputs](/public/output.png)
+![outputs](./output.png)
 ## 結果 | Results
 再 run 一次 `sudo apt update`：   
-![completed](/public/complete.png)   
+![completed](./complete.png)   
 成功ㄌ～這次就沒有出現 `NO_PUBKEY A2F683C52980AECF`等訊息了。   
-![concluded](/public/yay.jpg)
+![concluded](./yay.jpg)
