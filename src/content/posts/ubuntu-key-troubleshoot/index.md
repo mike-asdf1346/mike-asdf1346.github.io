@@ -72,7 +72,8 @@ sudo gpg --dearmor --yes -o /usr/share/keyrings/virtualbox.gpg /tmp/oracle_vbox_
 `gpg --dearmor`	把 ASCII armor 解包並轉換回二進位格式  
 `-yes` 覆蓋既有輸出檔案時自動確認   
 `-o` 指定輸出檔案   
-在確認是否有成功建立：   
+    
+確認是否有成功建立：   
 ```bash
 ls /usr/share/keyrings | grep 'virtualbox'
 ```   
