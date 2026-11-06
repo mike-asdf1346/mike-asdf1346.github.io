@@ -6,6 +6,6 @@ description: '簡介暫定'
 tags: ['Arch', 'Linux', 'Review', 'Journal']
 toc: true
 coverImage:
-  src: './cover暫定'
-  alt: 'Sorry, some error occured.'
+  src: '/public/arch-banner.png'
+  alt: 'Sorry, the image is not appearing.'
 ---
