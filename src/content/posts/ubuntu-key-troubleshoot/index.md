@@ -31,7 +31,7 @@ Error: The repository is not signed.
 ```
 從錯誤訊息中可知 Ubuntu 找不到相應的 GPG 公鑰，所以就沒辦法驗證 Virtualbox repo 的簽證。   
 為了避免下載到來源不明的套件(或是檔案內容被竄改)，APT 會比對官方給的 GPG 金鑰。
-## 流程
+## 流程 | Process
 ### VirtualBox Repo 的設定
 先找到 Virtualbox repo 的設定：
 ![settings](./virtualbox-set.png)   
@@ -42,7 +42,7 @@ deb [arch=amd64 signed-by=/usr/share/keyrings/virtualbox.gpg] https://download.v
 其中 `signed-by=/usr/share/keyrings/virtualbox.gpg` 就是公鑰指定的位置。
 ### 下載官方 GPG 公鑰
 ~~我把`/etc/apt/keyrings/`跟`/usr/share/keyrings/`搞錯了~~
-好（咳，這不是重點，現在要來下載官方釋出公鑰：   
+好（咳，這不是重點，現在要來下載官方給的公鑰：   
 ```bash
 wget -O /tmp/oracle_vbox_2016.asc \
 https://www.virtualbox.org/download/oracle_vbox_2016.asc
@@ -50,7 +50,7 @@ https://www.virtualbox.org/download/oracle_vbox_2016.asc
 :::note
 注意檔案是.asc，也就是 ASCII 檔。   
 `/tmp/`我放在 tmp 目錄
-`wget -O`指定下載檔案名稱及位置。   
+`wget -O`指定下載檔案名稱及位置。    
 `\`就單純想換行（可不用） :P
 :::   
 然後在驗證看看剛剛下載的`oracle_vbox_2016.asc`是不是正確的：   
@@ -61,7 +61,7 @@ gpg --show-keys --with-fingerprint /tmp/oracle_vbox_2016.asc
 確認 Fingerprint 金鑰指紋是否跟官方的吻合：   
 ![fingerprint](./fingerprint.png)
 ```text
-B9F8 D658 297A F3EF C18D 5CDF A2F6 83C5 2980 AECF
+B9F8 D658 297A F3EF C18D  5CDF A2F6 83C5 2980 AECF
 ```   
 跟官方的指紋一致
 ### 加入金鑰
