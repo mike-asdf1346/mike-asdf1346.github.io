@@ -22,7 +22,7 @@ coverImage:
 Warning: OpenPGP signature verification failed:
 https://download.virtualbox.org/virtualbox/debian resolute InRelease:
 
-The following signatures couldn't be verified because
+The following signatures couldn\'t be verified because
 the public key is not available:
 
 NO_PUBKEY A2F683C52980AECF
