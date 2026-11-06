@@ -1,5 +1,5 @@
 ---
-title: 'Ubuntu-trouble-shoot: 安裝 Virtualbox 時出現沒有金鑰認證'
+title: 'Ubuntu-troubleshoot: 安裝 Virtualbox 時出現沒有金鑰認證'
 published: 2026-11-06
 draft: False
 description: '此篇主要說明我在 Ubuntu 環境上安裝 Virtualbox 出現的問題。'
