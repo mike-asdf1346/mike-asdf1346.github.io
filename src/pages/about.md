@@ -14,8 +14,7 @@ title: 關於我 | About Myself
 - Nico Patty's OSTs
 - 看動漫
 - 畫畫 (很想畫但最近很忙QQ)
-- ~~蛤~~
-
+- ~~裝arch的時候把root掛載1G直接系統崩潰x~~
 ## 正在學習的事 | What I'm Doing
 Python OOC物件導向、Shell script、C lang、網頁前端開發、Linux exploring、web、reverse engineering、misc、網路基礎、計概、還有很多有關資安方面的東西還在探索。
 
