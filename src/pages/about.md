@@ -17,7 +17,7 @@ title: 關於我 | About Myself
 - ~~蛤~~
 
 ## 正在學習的事 | What I'm Doing
-Python, Linux, Networking, C lang, CTF, and so much more about cybersecurity.
+Python OOC物件導向、Shell script、C lang、網頁前端開發、Linux exploring、web、reverse engineering、misc、網路基礎、計概、還有很多有關資安方面的東西還在探索。
 
 ## To be updated...
 I will update more information about myself in the future days. (If I got time to write :P)  
