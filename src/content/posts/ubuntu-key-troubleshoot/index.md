@@ -49,11 +49,11 @@ https://www.virtualbox.org/download/oracle_vbox_2016.asc
 ```   
 :::note
 注意檔案是.asc，也就是 ASCII 檔。   
-`/tmp/`我放在 tmp 目錄
+`/tmp/`我放在 tmp 目錄    
 `wget -O`指定下載檔案名稱及位置。    
 `\`就單純想換行（可不用） :P
 :::   
-然後在驗證看看剛剛下載的`oracle_vbox_2016.asc`是不是正確的：   
+然後驗證看看剛下載的`oracle_vbox_2016.asc`是不是正確的：   
 ```bash
 gpg --show-keys --with-fingerprint /tmp/oracle_vbox_2016.asc
 ```  
