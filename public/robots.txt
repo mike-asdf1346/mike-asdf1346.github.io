@@ -1,5 +1,0 @@
-User-agent: *
-Allow: /
-
-Disallow: /posts/images/*.jpg
-Disallow: /posts/images/*.png
