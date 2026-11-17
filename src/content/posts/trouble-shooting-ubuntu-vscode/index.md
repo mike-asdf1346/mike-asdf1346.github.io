@@ -27,6 +27,7 @@ description: 'Vscode 在 Ubuntu 26.04.1 LTS 版本中使用 Zsh 的輸出問題'
 | Vscode editor | 1.146.0 x64 |
 | Python | 3.14.4 |
 | Python interpreter | /usr/bin/python3 |
+| ------------------ | ---------------- |
 問題：
 按下 'run python file' 時連續輸出兩次，第一次正常但沒東西，第二次正常輸出但出現錯誤訊息 'SIGINT(2)'，這個通常是因為觸發組合鍵`Ctrl + C`發送的一個 Linux/Unix 中斷程式執行的非同步訊號，全名是 Signal Interrupt 編號為 2。 
 ![my-error](./error-out.png)
