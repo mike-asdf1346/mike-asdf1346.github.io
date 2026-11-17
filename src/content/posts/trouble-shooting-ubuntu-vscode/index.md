@@ -13,7 +13,8 @@ description: 'Vscode 在 Ubuntu 26.04.1 LTS 版本中使用 Zsh 的輸出問題'
 :::note
 標題圖片的作者(Title image credits to)：[久蒼穹](https://www.pixiv.net/en/artworks/98684552) 
 :::  
-哇，這個問題困擾我有一段時間了，總之呢，就是我的 vscode 不知道為什麼一次會輸出兩次 outputs 甚至還有錯誤，反正就是這樣。喔對了，最近有空的話我會試開留言區，請各位再多加留意！感恩！
+哇，這個問題困擾我有一段時間了，總之呢，就是我的 vscode 不知道為什麼一次會輸出兩次 outputs 甚至還有錯誤，反正就是這樣。喔對了，最近有空的話我會試開留言區，請各位再多加留意！感恩！   
+~~請忽略我vscode字體~~
 ## 問題描述
 我的 Ubuntu 版本：
 ![version-ubun](./version.png)
@@ -63,7 +64,7 @@ print('python version:', sys.version)
 變正常了：
 ![result](./result.png)
 ## 總結
-試了很多遍我在想有可能是因為 VS Code 終端機整合跟 Zsh 環境不相容或是有衝突才造成這個奇怪的錯誤訊息。
+試了很多遍我在想有可能是因為 VS Code 終端機整合跟 Zsh 環境不相容或是有衝突才造成這個奇怪的錯誤訊息。   
 最後：
 - Python 3.14.4 正常
 - `/usr/bin/python3`是正確的路徑
