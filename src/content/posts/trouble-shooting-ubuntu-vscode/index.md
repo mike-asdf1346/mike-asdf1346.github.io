@@ -14,7 +14,7 @@ description: 'Vscode 在 Ubuntu 26.04.1 LTS 版本中使用 Zsh 的輸出問題'
 標題圖片的作者(Title image credits to)：[久蒼穹](https://www.pixiv.net/en/artworks/98684552) 
 :::  
 哇，這個問題困擾我有一段時間了，總之呢，就是我的 vscode 不知道為什麼一次會輸出兩次 outputs 甚至還有錯誤，反正就是這樣。喔對了，最近有空的話我會試開留言區，請各位再多加留意！感恩！   
-~~請忽略我vscode字體~~
+~~請忽略我vscode的字體~~
 ## 問題描述 & 我的裝置
 問題：   
 按下 'run python file' 時連續輸出兩次，第一次正常但沒東西，第二次正常輸出但出現錯誤訊息 'SIGINT(2)'，這個通常是因為觸發組合鍵`Ctrl + C`發送的一個 Linux/Unix 中斷程式執行的非同步訊號，全名是 Signal Interrupt 編號為 2。 
