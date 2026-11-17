@@ -1,5 +1,5 @@
 ---
-title: 'IG-spot-the-data CTF Write-Up'
+title: 'IG-spot-the-data CTF Write-Up (已封存)'
 published: 2026-10-26
 draft: false
 tags: ['CTF', 'Misc', 'Cybersecurity']
