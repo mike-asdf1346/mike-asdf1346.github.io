@@ -13,7 +13,7 @@ tags: ['OTW', 'Linux', 'Cybersecurity', 'Journal']
 戰爭遊戲: Bandit  
 此篇Lv: Level 13 → Level 14  
 狀態: Complete  
-此篇是否含有flag: No  
+此篇是否含有 password: No  
 
 ![otw img](/otw-image.png 'goal')
 
